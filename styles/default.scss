@@ -75,3 +75,43 @@
 .w-100{
     width: 100%;
 }
+
+.overlay-design{
+    $margin:20px;
+    position: relative;
+   .overlay{
+        position: absolute;
+        color:transparent;
+        font-size: 120px;
+        font-weight: 800;
+        z-index: -1;
+        letter-spacing: 5px;
+        line-height: 0px;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: rgba(50,50,50,0.1);
+   }
+    .title{
+        font-size: 20px;
+        color: green;
+        font-weight: 700;
+        margin-left: $margin;
+    }
+    .title::before{
+        content: '';
+        padding-left: 30px;
+        border-left: 12px solid green;
+    }
+    .sub-title{
+        margin-top: 20px;
+        font-size: 35px;
+        font-weight: 600;
+        line-height: 35px;
+        margin-left: $margin;
+    }
+    .content{
+        margin-top: 20px;
+        margin-left: $margin;
+        color: rgba(0,0,0,0.5);
+        line-height: 25px;
+    }
+}
