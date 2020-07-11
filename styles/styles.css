@@ -9016,51 +9016,73 @@ input[type=range]::-ms-thumb {
   }
 }
 
-.solarSolution {
+.topSlider {
+  position: relative;
+}
+
+.topSlider .background-img .shadow {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: -1;
+}
+
+.topSlider .background-img img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -2;
+}
+
+.topSlider .solarSolution {
   font-weight: 600;
 }
 
-.solarSolution .container {
+.topSlider .solarSolution .container {
   width: 80%;
+  color: white;
 }
 
-.solarSolution .container .content div:hover {
+.topSlider .solarSolution .container .content div:hover {
   text-decoration: underline;
   cursor: pointer;
 }
 
-.solarSolution .container .content img {
+.topSlider .solarSolution .container .content img {
   margin: 0 5px;
   cursor: pointer;
 }
 
-.banner .container {
+.topSlider .banner .container {
   width: 80%;
+  background-color: white;
+  padding: 20px;
 }
 
-.banner .container .content .phone div img {
+.topSlider .banner .container .content .phone div img {
   margin: 0 10px;
 }
 
-.banner .container .content .phone .time {
+.topSlider .banner .container .content .phone .time {
   font-weight: bold;
 }
 
-.banner .container .content .button {
+.topSlider .banner .container .content .button {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
 
-.banner .container .content .button button {
+.topSlider .banner .container .content .button button {
   position: relative;
   width: 100%;
-  margin: 5px 20px;
+  margin: 0px 0px 0 20px;
   text-transform: capitalize;
   z-index: 1;
   font-weight: bold;
 }
 
-.banner .container .content .button button:hover::before {
+.topSlider .banner .container .content .button button:hover::before {
   width: 100%;
   -webkit-transition: 1s;
   transition: 1s;
@@ -9068,7 +9090,7 @@ input[type=range]::-ms-thumb {
           transition-timing-function: ease-in-out;
 }
 
-.banner .container .content .button button::before {
+.topSlider .banner .container .content .button button::before {
   content: " ";
   position: absolute;
   width: 0%;
@@ -9079,13 +9101,13 @@ input[type=range]::-ms-thumb {
   z-index: -1;
 }
 
-.menus .container {
+.topSlider .menus .container {
   width: 80%;
   background-color: #4f4ffc;
   color: white;
 }
 
-.menus .container .menu {
+.topSlider .menus .container .menu {
   position: relative;
   margin: 15px 20px;
   font-weight: bold;
@@ -9093,7 +9115,7 @@ input[type=range]::-ms-thumb {
   cursor: pointer;
 }
 
-.menus .container .menu:hover::before {
+.topSlider .menus .container .menu:hover::before {
   -webkit-transition: 1s;
   transition: 1s;
   width: 50%;
@@ -9101,12 +9123,29 @@ input[type=range]::-ms-thumb {
   cursor: pointer;
 }
 
-.menus .container .menu::before {
+.topSlider .menus .container .menu::before {
   content: '';
   position: absolute;
   width: 0%;
   height: 100%;
   background-color: transparent;
   border-bottom: 1px solid white;
+}
+
+.topSlider .topSlider-caption {
+  color: white;
+}
+
+.topSlider .topSlider-caption .title {
+  font-size: 45px;
+  font-weight: 800;
+}
+
+.topSlider .topSlider-caption .content {
+  margin: 10px;
+}
+
+.topSlider .topSlider-caption button {
+  font-weight: bold;
 }
 /*# sourceMappingURL=styles.css.map */
