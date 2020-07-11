@@ -9068,6 +9068,10 @@ input[type=range]::-ms-thumb {
   font-weight: bold;
 }
 
+.topSlider .banner .container .content .phone .number {
+  font-weight: 600;
+}
+
 .topSlider .banner .container .content .button {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
