@@ -88,7 +88,7 @@
         letter-spacing: 5px;
         line-height: 0px;
         -webkit-text-stroke-width: 1px;
-        -webkit-text-stroke-color: rgba(50,50,50,0.1);
+        -webkit-text-stroke-color: rgba(50,100,50,0.2);
    }
     .title{
         font-size: 20px;
@@ -99,7 +99,7 @@
     .title::before{
         content: '';
         padding-left: 30px;
-        border-left: 12px solid green;
+        border-left: 5px solid green;
     }
     .sub-title{
         margin-top: 20px;
