@@ -117,15 +117,15 @@
   .topSlider .topSlider-caption .display-toogle {
     display: unset;
     position: relative;
-    left: -30px;
-    top: 30px;
+    top: 50px;
+    text-align: center;
   }
   .topSlider .topSlider-caption .title {
     font-size: 20px;
   }
   .topSlider .topSlider-caption .content {
     font-size: 15px;
-    margin: 10px 0;
+    margin: 20px 0;
   }
   .topSlider .topSlider-caption .btn-large {
     height: 30px;
@@ -167,6 +167,12 @@
   .why-us .why-us-content .content .cards .card-icon i {
     width: 25px;
     height: 25px;
+  }
+}
+
+@media only screen and (max-height: 500px) {
+  .topSlider .vh100 {
+    height: 500px;
   }
 }
 /*# sourceMappingURL=responsive.css.map */

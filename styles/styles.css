@@ -9017,8 +9017,8 @@ input[type=range]::-ms-thumb {
 }
 
 * {
-  -webkit-transition: .5s;
-  transition: .5s;
+  -webkit-transition: .1s;
+  transition: .1s;
 }
 
 .topSlider {
@@ -9048,6 +9048,9 @@ input[type=range]::-ms-thumb {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .topSlider .solarSolution .container {
@@ -9168,12 +9171,12 @@ input[type=range]::-ms-thumb {
 }
 
 .topSlider .topSlider-caption .title {
-  font-size: 45px;
+  font-size: 35px;
   font-weight: 800;
 }
 
 .topSlider .topSlider-caption .content {
-  margin: 10px;
+  margin: 20px 0;
 }
 
 .topSlider .topSlider-caption button {

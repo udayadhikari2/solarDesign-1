@@ -130,15 +130,16 @@
             .display-toogle{
                 display: unset;
                 position: relative;
-                left: -30px;
-                top: 30px;
+               
+                top:50px;
+                text-align: center;
             }
             .title{
                 font-size: 20px;
             }
             .content{
                 font-size: 15px;
-                margin: 10px 0;
+                margin: 20px 0;
             }
             .btn-large{
                 height: 30px;
@@ -198,4 +199,14 @@
         }
     }
     
+}
+
+
+
+@media only screen and (max-height:500px){
+    .topSlider{
+        .vh100{
+            height: 500px;
+        }
+    }
 }
