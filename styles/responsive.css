@@ -55,6 +55,9 @@
         -ms-flex-order: 1;
             order: 1;
   }
+  .why-us .why-us-img .items .item .content {
+    padding: 30px 0;
+  }
   .why-us .why-us-content {
     margin: 0;
     margin-top: 100px;
@@ -140,8 +143,27 @@
   .about .overlay-design .overlay {
     font-size: 80px;
   }
+  .about .overlay-design .sub-title {
+    font-size: 25px;
+  }
+  .about .overlay-design .content {
+    margin-right: 10px;
+  }
+  .about .about-img {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
   .about .about-img .responsive-img {
     height: 200px;
+  }
+  .about .about-content .btn-large {
+    height: 40px;
+    line-height: 40px;
+    padding: 0 20px;
   }
   .why-us {
     margin: 10px;
@@ -149,16 +171,36 @@
   .why-us .overlay-design .overlay {
     font-size: 80px;
   }
+  .why-us .overlay-design .sub-title {
+    font-size: 25px;
+  }
   .why-us .overlay-design .content {
-    line-height: 15px;
+    line-height: 18px;
+  }
+  .why-us .why-us-img {
+    margin-top: 100px;
+  }
+  .why-us .why-us-img .items .item .content .title {
+    font-size: 15px;
+  }
+  .why-us .why-us-img .items .item1 .img {
+    margin-bottom: 0;
+  }
+  .why-us .why-us-img .items .item2 .img {
+    margin-top: 0;
   }
   .why-us .why-us-content .content .cards {
     position: relative;
     left: -10px;
-    margin: 5px 0;
+    margin: 10px 0;
     padding: 15px 0px;
   }
   .why-us .why-us-content .content .cards .card-content {
+    font-weight: 400;
+    margin-left: 10px;
+  }
+  .why-us .why-us-content .content .cards .card-title {
+    font-size: 17px;
     font-weight: 400;
   }
   .why-us .why-us-content .content .cards .card-icon {
@@ -167,6 +209,25 @@
   .why-us .why-us-content .content .cards .card-icon i {
     width: 25px;
     height: 25px;
+  }
+  .contacts .menus .items {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contacts .menus .items .item {
+    margin: 10px 0;
+  }
+  .contacts .menus .items .item .content {
+    margin-top: 5px;
+    margin-left: 15px;
+  }
+  .contacts .divider {
+    display: none;
+  }
+  .contacts .copyright {
+    padding-top: 10px;
   }
 }
 

@@ -197,13 +197,54 @@
         }
     }
 }
+
 .why-us{
     display: flex;
     margin:100px;
     .why-us-img{
         flex:1;
-        img{
-            height: 350px;
+        .items{
+            .item{
+                div{
+                    display: flex;
+                }
+                .content{
+                    .title{
+                        margin: 20px 0;
+                        color:white;
+                        font-weight:bold;
+                        font-size: 25px;
+                        text-align: center;
+                    }
+                    button{
+                        background-color:white;
+                        color: black;
+                        font-weight: 800;
+                        font-size: 25px;
+                    }
+                }
+            }
+            .item1{
+                .content{
+                    background: orangered;
+                }
+                .img{
+                    margin-bottom: 30px;
+                    border-left: 1px solid grey;
+                    border-bottom: 1px solid grey;
+                }
+                
+            }
+            .item2{
+                .content{
+                    background: green;
+                }
+                .img{
+                    margin-top: 30px;
+                    border-top: 1px solid grey;
+                    border-right: 1px solid grey;
+                }
+            }
         }
     }
     .why-us-content{
@@ -257,5 +298,57 @@
                 transition: .5s;
             }
         }
+    }
+   
+}
+
+.contacts{
+    background-color: #333;
+    color: white;
+    padding:  30px 30px;
+    .menus{
+        .items{
+            display: flex;
+            align-items: flex-start;
+            .item{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                flex: 1;
+                margin:50px 0;
+                font-weight:600;
+                .main-title{
+                    font-size: 25px;
+                }
+                .content{
+                    margin-top: 30px;
+                    div{
+                        margin: 5px 0;
+                    }
+                }
+            
+            }
+            .sub-contacts{
+                .material-icons{
+                    padding-right: 10px;
+                }
+            }
+            .sub-subscribe{
+                input{
+                    color:white;
+                }
+                input[type=email]:not(.browser-default):focus:not([readonly]){
+                    border-bottom : 2px solid white ;
+                    box-shadow:0 0 white ;
+                }
+                
+            }
+        }
+        
+    }
+    .copyright{
+        padding: 30px 0;
+        color:wheat
     }
 }
