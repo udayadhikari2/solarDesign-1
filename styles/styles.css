@@ -9016,6 +9016,11 @@ input[type=range]::-ms-thumb {
   }
 }
 
+* {
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
 .topSlider {
   position: relative;
 }
@@ -9039,6 +9044,12 @@ input[type=range]::-ms-thumb {
   font-weight: 600;
 }
 
+.topSlider .solarSolution .display-toogle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .topSlider .solarSolution .container {
   width: 80%;
   color: white;
@@ -9058,6 +9069,10 @@ input[type=range]::-ms-thumb {
   width: 80%;
   background-color: white;
   padding: 20px;
+}
+
+.topSlider .banner .container .content .phone {
+  margin-left: 20px;
 }
 
 .topSlider .banner .container .content .phone div img {
@@ -9140,6 +9155,18 @@ input[type=range]::-ms-thumb {
   color: white;
 }
 
+.topSlider .topSlider-caption .display-toogle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .topSlider .topSlider-caption .title {
   font-size: 45px;
   font-weight: 800;
@@ -9163,6 +9190,12 @@ input[type=range]::-ms-thumb {
       -ms-flex-align: center;
           align-items: center;
   text-align: left;
+}
+
+.experience-bar .display-toogle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .experience-bar .items {

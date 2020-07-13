@@ -1,7 +1,8 @@
 @import 'materialize';
-
+*{
+    transition:.5s;
+}
 .topSlider{
-  
     position: relative;
     .background-img{
         .shadow{
@@ -22,6 +23,9 @@
     
     .solarSolution{
         font-weight: 600;
+        .display-toogle{
+            display: flex;
+        }
         .container{
             width:80%;
             color: white;
@@ -41,11 +45,9 @@
             width: 80%;
             background-color: white;
             padding:20px;
-            .logo{
-                
-            }
             .content{
                 .phone{
+                    margin-left: 20px;
                     div img{
                         margin: 0 10px;
                     }
@@ -118,6 +120,11 @@
 
     .topSlider-caption{
         color:white;
+        .display-toogle{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
         .title{
             font-size: 45px;
             font-weight: 800;
@@ -137,6 +144,9 @@
     display: flex;
     align-items: center;
     text-align: left;
+    .display-toogle{
+        display:flex
+    }
     .items{
         margin: 0 20px;
         flex: 1;
