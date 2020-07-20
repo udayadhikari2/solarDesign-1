@@ -9421,6 +9421,7 @@ input[type=range]::-ms-thumb {
 
 .Services .overlay-design .content .material-icons {
   font-size: 50px;
+  color: orangered;
 }
 
 .Services .overlay-design .content .content-title {

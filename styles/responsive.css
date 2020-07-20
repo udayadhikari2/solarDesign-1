@@ -219,6 +219,9 @@
   .Services .overlay-design .content {
     line-height: 18px;
   }
+  .Services .overlay-design .content .material-icons {
+    font-size: 40px;
+  }
   .contacts .menus .items {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
