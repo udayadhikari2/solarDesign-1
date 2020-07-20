@@ -229,7 +229,26 @@
     font-size: 25px;
   }
   .Products .overlay-design .content {
-    line-height: 18px;
+    margin: 100px 20px;
+  }
+  .Products .overlay-design .content .product-carsouel {
+    padding: 0 5px;
+    padding-bottom: 20px;
+  }
+  .Products .overlay-design .content .product-carsouel .slick-next:before {
+    color: black;
+  }
+  .Products .overlay-design .content .product-carsouel .slick-prev:before {
+    color: black;
+  }
+  .Products .overlay-design .content .product-carsouel div {
+    height: 250px;
+    margin: 0 5px;
+  }
+  .Products .overlay-design .content .product-carsouel div img {
+    width: 100%;
+    height: 250px;
+    border: 1px solid rgba(0, 0, 0, 0.8);
   }
   .contacts .menus .items {
     -webkit-box-orient: vertical;

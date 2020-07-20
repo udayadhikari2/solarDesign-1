@@ -283,8 +283,31 @@
                 font-size: 25px;
              }
             .content{
-                line-height: 18px;
+               
                 
+            }
+            .content{
+                margin: 100px 20px;
+               .product-carsouel{
+                .slick-next:before{
+                    color:black;
+                }
+                .slick-prev:before{
+                    color:black;
+                }
+                   padding:0 5px;
+                   padding-bottom: 20px;
+                  div{
+                      height: 250px;
+                      margin:0 5px;
+                      
+                      img{
+                          width: 100%;
+                          height:250px;
+                          border: 1px solid rgba(0,0,0,0.8);
+                      }
+                  }
+               }
             }
             
         }
