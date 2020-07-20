@@ -326,10 +326,10 @@
     .overlay-design{
         .overlay{
             position:relative;
-            
         }
         .content{
             margin: 50px 0;
+            cursor: pointer;
             .material-icons{
                 font-size: 50px;
                 color:orangered
@@ -344,16 +344,60 @@
             .content-title::before{
                 content:'';
                 position: absolute;
-                width: 15%;
+                width: 20%;
                 height: 3px;
                 bottom:-18px;
                 background-color:orangered;
             }
+           
             .content-body{
                 text-align: left;
                 margin:30px 0 ;
             }
         }
+       
+    }
+    .row :hover .content-title::before {
+        width: 90%;
+        transition:1s;
+    }
+}
+.Products{
+    padding :30px 30px;
+    text-align: center;
+    .overlay-design{
+        .overlay{
+            position:relative;
+        }
+        .content{
+            margin: 100px 20px;
+           .product-carsouel{
+            .slick-next:before{
+                color:black;
+            }
+            .slick-prev:before{
+                color:black;
+            }
+               padding:0 20px;
+               padding-bottom: 20px;
+              div{
+                  height: 250px;
+                  margin:0 20px;
+                  
+                  img{
+                      width: 100%;
+                    
+                      height:250px;
+                      border: 1px solid rgba(0,0,0,0.8);
+                  }
+              }
+           }
+        }
+       
+    }
+    .row :hover .content-title::before {
+        width: 90%;
+        transition:1s;
     }
 }
 

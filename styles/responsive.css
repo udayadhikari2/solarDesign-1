@@ -222,6 +222,15 @@
   .Services .overlay-design .content .material-icons {
     font-size: 40px;
   }
+  .Products .overlay-design .overlay {
+    font-size: 80px;
+  }
+  .Products .overlay-design .sub-title {
+    font-size: 25px;
+  }
+  .Products .overlay-design .content {
+    line-height: 18px;
+  }
   .contacts .menus .items {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;

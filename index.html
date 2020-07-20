@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
     <link rel="stylesheet" href="./styles/default.css">
     <link rel="stylesheet" href="./styles/styles.css">
     <link rel="stylesheet" href="./styles/responsive.css">
@@ -231,18 +235,18 @@
     <div class="Services">
         <div class="overlay-design">
             <div class="overlay">Services</div>
-            <div class="title">we provide you</div>
+            <div class="title">what we do</div>
             <div class="sub-title">With super excellence and <br> on date services</div>
             <div class="content">
                 <div class="row">
-                    <div class="col s12 m4">
+                    <div class="col s12 m6 l4">
                         <div class="content-icon"><i class="material-icons">build</i></div>
                         <div class="content-title">Servicing</div>
                         <div class="content-body">Servicing your Solar System is not only required by some distributors
                             and retailers, it is the best way to ensure that your system is running to its peak
                             capacity, and most importantly, that it is safe for you and your family.</div>
                     </div>
-                    <div class="col s12 m4">
+                    <div class="col s12 m6 l4">
                         <div class="content-icon"><i class="material-icons">battery_charging_full</i></div>
                         <div class="content-title">Solar Battery Solutions</div>
                         <div class="content-body">The Solar Power industry is moving towards Battery Storage. With
@@ -250,12 +254,40 @@
                             for use when the sun goes down. Battery storage solutions are offered with monitoring to
                             ensure each household can maximise their savings.</div>
                     </div>
-                    <div class="col s12 m4">
+                    <div class="col s12  m6 l4">
                         <div class="content-icon"><i class="material-icons">settings</i></div>
                         <div class="content-title">Installation</div>
                         <div class="content-body">Solar Service Group is more than servicing and solar battery
                             solutions. We also specialise in the installation of complete PV solar systems with our
                             trusted and experienced installers nation wide.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- PRODUCTS -->
+    <div class="Products">
+        <div class="overlay-design">
+            <div class="overlay">Products</div>
+            <div class="title">what we made</div>
+            <div class="sub-title">With most durable and flexable<br> high quality products</div>
+            <div class="content" style="height: 300px; position: relative;">
+                <div class="product-carsouel">
+                    <div class="">
+                        <img src="./assets/images/products/panel.jpg" alt="" srcset="">
+                    </div>
+                    <div class="">
+                        <img src="./assets/images/products/model.jpg" alt="" srcset="">
+                    </div>
+                    <div class="">
+                        <img src="./assets/images/products/streetlight.jpg" alt="" srcset="">
+                    </div>
+                    <div class="">
+                        <img src="./assets/images/products/waterpump.jpg" alt="" srcset="">
+                    </div>
+                    <div class="">
+                        <img src="./assets/images/products/waterpanel.jpg" alt="" srcset="">
                     </div>
                 </div>
             </div>
@@ -313,6 +345,7 @@
 </html>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js"></script>
 <script src="./scripts/bin/materialize.js"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 <script>
     $('.dropdown-trigger').dropdown({
         alignment: 'left',
@@ -321,4 +354,39 @@
 
         coverTrigger: false
     });
+    $('.product-carsouel').slick({
+        infinite: true,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        adaptiveHeight: true,
+        accessibility: true,
+        centerPadding: '150px',
+        dots: true,
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 1,
+                    infinite: true,
+                    dots: true
+                }
+            },
+            {
+                breakpoint: 800,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }]
+
+    });
+
 </script>
