@@ -2,6 +2,7 @@
 *{
     transition:.1s;
 }
+
 .topSlider{
     position: relative;
     .background-img{
@@ -89,7 +90,7 @@
             }
         }
     }
-
+    
     .menus{
         .container{
             width:80%;
@@ -116,7 +117,24 @@
                 background-color: transparent;
                 border-bottom: 1px solid white;
             }
+          
         }
+    }
+
+ 
+    .dropdown-content{
+        background-color: rgb(79, 79, 252);
+        // border:10px solid  rgb(79, 79, 252);
+        font-weight: 600;
+        box-shadow: 5px 5px 5px rgba(0,0,0,0.3);
+        li{
+            a{
+                color:white
+            }
+        }
+    }
+    .dropdown-content li:hover{
+        background-color: rgb(60, 60, 200);
     }
 
     .topSlider-caption{
@@ -302,8 +320,45 @@
    
 }
 
+.Services{
+    padding :30px 30px;
+    text-align: center;
+    .overlay-design{
+        .overlay{
+            position:relative;
+            
+        }
+        .content{
+            margin: 50px 0;
+            .material-icons{
+               font-size: 50px;
+             
+            }
+            .content-title{
+                font-size :30px;
+                font-weight: bold;
+                position: relative;
+                text-align: left;
+                margin-top: 30px;
+            }
+            .content-title::before{
+                content:'';
+                position: absolute;
+                width: 15%;
+                height: 3px;
+                bottom:-20px;
+                background-color:orangered;
+            }
+            .content-body{
+                text-align: left;
+                margin:30px 0 ;
+            }
+        }
+    }
+}
+
 .contacts{
-    background-color: #333;
+    background-color: rgb(31, 36, 44);
     color: white;
     padding:  30px 30px;
     .menus{

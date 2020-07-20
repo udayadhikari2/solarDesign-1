@@ -9154,6 +9154,21 @@ input[type=range]::-ms-thumb {
   border-bottom: 1px solid white;
 }
 
+.topSlider .dropdown-content {
+  background-color: #4f4ffc;
+  font-weight: 600;
+  -webkit-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+          box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+}
+
+.topSlider .dropdown-content li a {
+  color: white;
+}
+
+.topSlider .dropdown-content li:hover {
+  background-color: #3c3cc8;
+}
+
 .topSlider .topSlider-caption {
   color: white;
 }
@@ -9391,8 +9406,47 @@ input[type=range]::-ms-thumb {
   transition: .5s;
 }
 
+.Services {
+  padding: 30px 30px;
+  text-align: center;
+}
+
+.Services .overlay-design .overlay {
+  position: relative;
+}
+
+.Services .overlay-design .content {
+  margin: 50px 0;
+}
+
+.Services .overlay-design .content .material-icons {
+  font-size: 50px;
+}
+
+.Services .overlay-design .content .content-title {
+  font-size: 30px;
+  font-weight: bold;
+  position: relative;
+  text-align: left;
+  margin-top: 30px;
+}
+
+.Services .overlay-design .content .content-title::before {
+  content: '';
+  position: absolute;
+  width: 15%;
+  height: 3px;
+  bottom: -20px;
+  background-color: orangered;
+}
+
+.Services .overlay-design .content .content-body {
+  text-align: left;
+  margin: 30px 0;
+}
+
 .contacts {
-  background-color: #333;
+  background-color: #1f242c;
   color: white;
   padding: 30px 30px;
 }

@@ -210,6 +210,15 @@
     width: 25px;
     height: 25px;
   }
+  .Services .overlay-design .overlay {
+    font-size: 80px;
+  }
+  .Services .overlay-design .sub-title {
+    font-size: 25px;
+  }
+  .Services .overlay-design .content {
+    line-height: 18px;
+  }
   .contacts .menus .items {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;

@@ -63,11 +63,40 @@
                 <div class="container dflex">
                     <div class="menu">HOME</div>
                     <div class="menu">ABOUT US</div>
-                    <div class="menu">SERVICES</div>
+                    <div class="menu dropdown-trigger" data-target='m_services'>SERVICES</div>
+                    <div class="menu dropdown-trigger" data-target='m_products'>PRODUCTS</div>
                     <div class="menu">PROJECTS</div>
-                    <div class="menu">NEWS</div>
                     <div class="menu">CONTACT</div>
                 </div>
+            </div>
+            <!-- DROPDOWN MENU -->
+            <div class="m_drop">
+                <!-- SERVICES -->
+                <ul id='m_services' class='dropdown-content'>
+                    <li><a href="#!">Institutional Solar Power System</a></li>
+                    <li class="divider" tabindex="-1"></li>
+                    <li><a href="#!">Solar Irrigation</a></li>
+                    <li class="divider" tabindex="-1"></li>
+                    <li><a href="#!">Solar Home System</a></li>
+                    <li class="divider" tabindex="-1"></li>
+                    <li><a href="#!">Agriculture Services</a></li>
+                </ul>
+                <!-- PRODUCTS -->
+                <ul id='m_products' class='dropdown-content'>
+                    <li><a href="#!">Street Lights, Home Lights</a></li>
+                    <li class="divider" tabindex="-1"></li>
+                    <li><a href="#!">Solar PV Panel</a></li>
+                    <li class="divider" tabindex="-1"></li>
+                    <li><a href="#!">Solar Batteries</a></li>
+                    <li class="divider" tabindex="-1"></li>
+                    <li><a href="#!">Inverters</a></li>
+                    <li class="divider" tabindex="-1"></li>
+                    <li><a href="#!">Solar Water Pumps</a></li>
+                    <li class="divider" tabindex="-1"></li>
+                    <li><a href="#!">Solar Charger</a></li>
+                    <li class="divider" tabindex="-1"></li>
+                    <li><a href="#!">Agriculture Products</a></li>
+                </ul>
             </div>
             <!-- CAPTIONS -->
             <div class="topSlider-caption flex-1 ">
@@ -118,13 +147,16 @@
                 <div class="overlay">ABOUT</div>
                 <div class="title">who we are</div>
                 <div class="sub-title">We are the Best-In-Class <br> Products & Solutions</div>
-                <div class="content">iRecco is among the world’s leading renewable energy solutions provider that is
+                <div class="content">Sourya Energy is among the world’s leading renewable energy solutions provider that
+                    is
                     revolutionising and redefining the way sustainable energy sources are harnessed across the world.
                     Present in 18 countries across Asia, Australia, Europe, Africa and the Americas, Veztaz is powering
                     a greener tomorrow.</div>
-                <button class="btn btn-large waves-effect red">
+
+                <button class="btn btn-large waves-effect red" onclick="window.open('./assets/images/Brochure.jpg')">
                     <i class="material-icons right">file_download</i>
                     Download Brochure</button>
+
             </div>
         </div>
     </div>
@@ -195,13 +227,48 @@
         </div>
     </div>
 
+    <!-- SERVICES -->
+    <div class="Services">
+        <div class="overlay-design">
+            <div class="overlay">Services</div>
+            <div class="title">we provide you</div>
+            <div class="sub-title">With super excellence and <br> on date services</div>
+            <div class="content">
+                <div class="row">
+                    <div class="col s12 m4">
+                        <div class="content-icon"><i class="material-icons">build</i></div>
+                        <div class="content-title">Servicing</div>
+                        <div class="content-body">Servicing your Solar System is not only required by some distributors
+                            and retailers, it is the best way to ensure that your system is running to its peak
+                            capacity, and most importantly, that it is safe for you and your family.</div>
+                    </div>
+                    <div class="col s12 m4">
+                        <div class="content-icon"><i class="material-icons">battery_charging_full</i></div>
+                        <div class="content-title">Solar Battery Solutions</div>
+                        <div class="content-body">The Solar Power industry is moving towards Battery Storage. With
+                            battery storage technology, any excess electricity your panels create can safely be stored
+                            for use when the sun goes down. Battery storage solutions are offered with monitoring to
+                            ensure each household can maximise their savings.</div>
+                    </div>
+                    <div class="col s12 m4">
+                        <div class="content-icon"><i class="material-icons">settings</i></div>
+                        <div class="content-title">Installation</div>
+                        <div class="content-body">Solar Service Group is more than servicing and solar battery
+                            solutions. We also specialise in the installation of complete PV solar systems with our
+                            trusted and experienced installers nation wide.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- CONTACTS -->
     <div class="contacts">
         <div class="menus">
             <div class="items jcc">
                 <div class="sub-details item">
                     <div class="">
-                        Sourya Energy extensive range of robust and reliable products backed by its cutting-edge R&D and more
+                        Sourya Energy extensive range of robust and reliable products backed by its cutting-edge R&D and
+                        more
                         than two decades of expertise are designed to performance.
                     </div>
                 </div>
@@ -246,3 +313,12 @@
 </html>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js"></script>
 <script src="./scripts/bin/materialize.js"></script>
+<script>
+    $('.dropdown-trigger').dropdown({
+        alignment: 'left',
+        constrainWidth: false,
+        hover: true,
+
+        coverTrigger: false
+    });
+</script>
