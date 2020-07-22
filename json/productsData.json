@@ -1,0 +1,66 @@
+[
+    {
+        "id" : 0,
+        "images":"https://westech-pv.com/media/image/product/1745/lg/solar-module-100w-mono-cl-100-wm.jpg",
+        "productName":"Solar Panel",
+        "productCompany":"G and P Company",
+        "warrenty":"20 Years",
+        "moreInfo":""
+    },
+    {
+        "id" : 1,
+        "images":"https://hardwarepasal.com/src/img/product/2018-12-05-08-25-32_0tJj1jdtnLproduct.jpg",
+        "productName":"Street lights",
+        "productCompany":"Sourya Energy ",
+        "warrenty":"2 Years",
+        "moreInfo":"" 
+    },
+    {
+        "id" : 2,
+        "images":"https://www.merkasol.com/WebRoot/StoreLES/Shops/62387086/5197/74FD/7683/59C4/D15D/C0A8/29C0/22E8/baterias-TOPZS-EnergyCell-12-unds.jpg",
+        "productName":"Batteries",
+        "productCompany":"G Company",
+        "warrenty":"5 Years",
+        "moreInfo":"" 
+    },
+    {
+        "id" : 3,
+        "images":"https://5.imimg.com/data5/GQ/TB/MY-1742250/high-pressure-water-pumps-500x500.jpg",
+        "productName":"Water Pump",
+        "productCompany":"G P Company",
+        "warrenty":"5 Years",
+        "moreInfo":"" 
+    },
+    {
+        "id" : 4,
+        "images":"https://149350987.v2.pressablecdn.com/wp-content/uploads/2019/07/SP-7-SolarPulse-12V-Battery-Solar-Charger-Maintainer-7W-1.jpg",
+        "productName":"Chargers",
+        "productCompany":"P Company",
+        "warrenty":"6 Months",
+        "moreInfo":"" 
+    },
+    {
+        "id" : 5,
+        "images":"https://static-01.daraz.com.np/p/3ea96432ac5ce7d25742b2f00bc041e2.jpg",
+        "productName":"Water Pump",
+        "productCompany":"G P Company",
+        "warrenty":"5 Years",
+        "moreInfo":"" 
+    },
+    {
+        "id" : 6,
+        "images":"https://static-01.daraz.com.np/p/1c8311517dfb5660a5ab14e22dbed03d.jpg",
+        "productName":"Solar Lights",
+        "productCompany":"G P Company",
+        "warrenty":"5 Years",
+        "moreInfo":"" 
+    },
+    {
+        "id" : 7,
+        "images":"https://ae01.alicdn.com/kf/HTB1EsyOjZfpK1RjSZFOq6y6nFXaC/10-HP-Small-Tractor-Cultivator-Rotary-Cultivator-Machine-For-Irrgate-the-Fields.jpg",
+        "productName":"Tractor",
+        "productCompany":"G P Company",
+        "warrenty":"20 Years",
+        "moreInfo":"" 
+    }
+]

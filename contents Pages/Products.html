@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sourya Energy - Products</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+    <link rel="stylesheet" href="../styles/default.css">
+    <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="stylesheet" href="../styles/responsive.css">
+</head>
+
+<body>
+    <div class="topSlider">
+        <div class="vh100 dflex-col">
+            <div class="background-img">
+                <div class="shadow"></div>
+                <img src="../assets/images/solar.jpg" alt="" srcset="">
+            </div>
+            <!-- Solar Solutions / Top -->
+            <div class="solarSolution">
+                <div class="container section display-toogle jcsb">
+                    <div class="main">The Best Solar Solution</div>
+                    <div class="content dflex aic">
+                        <div class="">Email: souryaenergy2063@gmail.com</div>
+                        <div class="social">
+                            <img height="20px" src="https://img.icons8.com/fluent/48/000000/facebook-new.png" />
+                            <img height="20px" src="https://img.icons8.com/fluent/48/000000/instagram-new.png" />
+                            <img height="20px" src="https://img.icons8.com/fluent/48/000000/twitter.png" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- MENUS -->
+            <div class="menus">
+                <div class="container dflex">
+                    <div class="menu">HOME</div>
+                    <div class="menu">ABOUT US</div>
+                    <div class="menu dropdown-trigger" data-target='m_services'>SERVICES</div>
+                    <div class="menu dropdown-trigger" data-target='m_products'>PRODUCTS</div>
+                    <div class="menu">PROJECTS</div>
+                    <div class="menu">CONTACT</div>
+                </div>
+            </div>
+            <!-- DROPDOWN MENU -->
+            <div class="m_drop">
+                <!-- SERVICES -->
+                <ul id='m_services' class='dropdown-content'>
+                    <li><a href="#!">Institutional Solar Power System</a></li>
+                    <li class="divider" tabindex="-1"></li>
+                    <li><a href="#!">Solar Irrigation</a></li>
+                    <li class="divider" tabindex="-1"></li>
+                    <li><a href="#!">Solar Home System</a></li>
+                    <li class="divider" tabindex="-1"></li>
+                    <li><a href="#!">Agriculture Services</a></li>
+                </ul>
+                <!-- PRODUCTS -->
+                <ul id='m_products' class='dropdown-content'>
+                    <li><a href="#!">Street Lights, Home Lights</a></li>
+                    <li class="divider" tabindex="-1"></li>
+                    <li><a href="#!">Solar PV Panel</a></li>
+                    <li class="divider" tabindex="-1"></li>
+                    <li><a href="#!">Solar Batteries</a></li>
+                    <li class="divider" tabindex="-1"></li>
+                    <li><a href="#!">Inverters</a></li>
+                    <li class="divider" tabindex="-1"></li>
+                    <li><a href="#!">Solar Water Pumps</a></li>
+                    <li class="divider" tabindex="-1"></li>
+                    <li><a href="#!">Solar Charger</a></li>
+                    <li class="divider" tabindex="-1"></li>
+                    <li><a href="#!">Agriculture Products</a></li>
+                </ul>
+            </div>
+            <div class="container-fluid w-75 p-0 h-100">
+                <div class="row">
+                    <div class="col-md-12 ">
+                        <div class="productsCards dflex flex-wrap" id="productsCards"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+
+</html>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js"></script>
+<script src="../scripts/bin/materialize.js"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script>
+
+    var productsLists = document.getElementById('productsCards');
+    fetch("../json/productsData.json")
+        .then(response => response.json())
+        .then(function (listData) {
+            var i;
+            // productsLists.innerHTML='';
+            for (i = 0; i < 8; i++) {
+                var img = listData[i].images;
+                var pdcName = listData[i].productName;
+                var pdcCompany = listData[i].productCompany;
+                var wrn = listData[i].warrenty;
+                var mrInfo = listData[i].moreInfo;
+                productsLists.innerHTML += `
+                
+                    <div class="card m-2" style="height:400px;width:230px;background-color:rgba(59, 208, 210, 0.7);">
+                        <img class="card-img-top" src="${img}" alt="Card image" style="height:150px;">
+                          <div class="card-body">
+                            <h5 class="card-title font-weight-bold">${pdcName}</h5>
+                            <p class="card-text">Compay : ${pdcCompany}</p>
+                            <p class="card-text">Warrenty : ${wrn} </p>
+                            <a href="#" class="btn btn-primary">Read Details</a>
+                         
+                    </div>
+                </div>`;
+            }
+        });
+
+
+    $('.dropdown-trigger').dropdown({
+        alignment: 'left',
+        constrainWidth: false,
+        hover: true,
+        coverTrigger: false
+    });
+    $('.product-carsouel').slick({
+        autoplay:true,
+        infinite: true,
+        centerMode:true,
+        centerPadding:'30px',
+        // adaptiveHeight: false,
+        slidesToShow:3,
+        slidesToScroll:1,
+        speed:1500,
+        dots: true,
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 1,
+                    infinite: true,
+                    dots: true
+                }
+            },
+            {
+                breakpoint: 800,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }]
+
+    });
+
+</script>
