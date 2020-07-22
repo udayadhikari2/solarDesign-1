@@ -277,17 +277,29 @@
                     <div class="">
                         <img src="./assets/images/products/panel.jpg" alt="" srcset="">
                     </div>
-                    <div class="">
+                    <!-- <div class="">
                         <img src="./assets/images/products/model.jpg" alt="" srcset="">
-                    </div>
-                    <div class="">
+                    </div> -->
+                    <!-- <div class="">
                         <img src="./assets/images/products/streetlight.jpg" alt="" srcset="">
-                    </div>
+                    </div> -->
                     <div class="">
                         <img src="./assets/images/products/waterpump.jpg" alt="" srcset="">
                     </div>
                     <div class="">
                         <img src="./assets/images/products/waterpanel.jpg" alt="" srcset="">
+                    </div>
+                    <div class="">
+                        <img src="./assets/images/products/SolarPannel.jpeg" alt="" srcset="">
+                    </div>
+                    <div class="">
+                        <img src="./assets/images/products/WorkOnSolarPannel.jpeg" alt="" srcset="">
+                    </div>
+                    <div class="">
+                        <img src="./assets/images/products/SolarFrame.jpeg" alt="" srcset="">
+                    </div>
+                    <div class="">
+                        <img src="./assets/images/products/SolarPannelSideView.jpeg" alt="" srcset="">
                     </div>
                 </div>
             </div>
@@ -355,10 +367,13 @@
         coverTrigger: false
     });
     $('.product-carsouel').slick({
+        autoplay:true,
         infinite: true,
-        slidesToShow: 3,
-        slidesToScroll: 1,
-        
+        centerMode:true,
+        centerPadding:'30px',
+        // adaptiveHeight: false,
+        slidesToShow:3,
+        slidesToScroll:1,
         speed:1500,
         dots: true,
         responsive: [

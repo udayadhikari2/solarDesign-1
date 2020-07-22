@@ -9234,6 +9234,8 @@ input[type=range]::-ms-thumb {
 .experience-bar .items div img {
   width: 100%;
   height: 100%;
+  opacity: 0.6;
+  border-radius: 10px;
 }
 
 .experience-bar .items .item .title {
@@ -9475,12 +9477,22 @@ input[type=range]::-ms-thumb {
   padding-bottom: 20px;
 }
 
+.Products .overlay-design .content .product-carsouel .slick-slide img {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.Products .overlay-design .content .product-carsouel .slick-slide.slick-center img {
+  height: 250px;
+  width: 100%;
+}
+
 .Products .overlay-design .content .product-carsouel .slick-next:before {
-  color: black;
+  color: orangered;
 }
 
 .Products .overlay-design .content .product-carsouel .slick-prev:before {
-  color: black;
+  color: orangered;
 }
 
 .Products .overlay-design .content .product-carsouel div {
@@ -9490,9 +9502,10 @@ input[type=range]::-ms-thumb {
 
 .Products .overlay-design .content .product-carsouel div img {
   width: 100%;
-  height: 250px;
-  border: 2px solid rgba(37, 36, 36, 0.8);
+  height: 200px;
+  border: 1px solid rgba(76, 25, 25, 0.8);
   border-radius: 10px;
+  outline: none;
 }
 
 .Products .row :hover .content-title::before {
